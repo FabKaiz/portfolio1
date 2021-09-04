@@ -106,7 +106,7 @@ ul {
 
 a {
   text-decoration: none;
-  
+
 }
 
 img {
@@ -136,7 +136,7 @@ img {
 
 /*==================== LAYOUT ====================*/
 .container {
-  min-width: 768px;
+  /* min-width: 768px; */
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -154,12 +154,6 @@ img {
   z-index: var(--z-fixed);
   background-color: var(--body-color);
 }
-
-/*==================== NAV ====================*/
-
-
-/* show menu */
-
 
 /* Active link */
 
