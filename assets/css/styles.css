@@ -3,6 +3,8 @@
 
 /*==================== IMPORT COMPONENTS CSS ====================*/
 @import './components/nav.css';
+@import './components/home.css';
+@import './components/about.css';
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -161,13 +163,6 @@ img {
 /* Change background header */
 
 
-/*==================== HOME ====================*/
-
-
-/*==================== BUTTONS ====================*/
-
-
-/*==================== ABOUT ====================*/
 
 
 /*==================== SKILLS ====================*/

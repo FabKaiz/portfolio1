@@ -17,13 +17,12 @@
 }
 
 .nav__toggle {
-  height: 1.1rem;
-  width: 1.1rem;
+  font-size: 1.1rem;
   cursor: pointer;
 }
 
-svg#nav-toggle:hover path {
-  fill: var(--first-color)
+.nav__toggle:hover {
+  color: var(--first-color)
 }
 
 .nav__list {
@@ -34,10 +33,11 @@ svg#nav-toggle:hover path {
 .nav__link {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   font-size: var(--small-font-size);
-  color:var(--title-color);
+  color: var(--title-color);
   font-weight: var(--font-medium);
+  transition: .3s
 }
 
 .nav__link:hover {
@@ -49,20 +49,20 @@ svg#nav-toggle:hover path {
 }
 
 .nav__icon {
-  width: 1.2rem;
-  height: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .nav__close {
-  width: 24px;
   position: absolute;
-  right: 1rem;
+  right: 1.3rem;
   bottom: .5rem;
+  font-size: 1.5rem;
   cursor: pointer;
+  color:var(--first-color);
 }
 
-.nav__close:hover * {
-  fill: var(--first-color-alt);
+.nav__close:hover {
+  color: var(--first-color-alt);
 }
 
 
