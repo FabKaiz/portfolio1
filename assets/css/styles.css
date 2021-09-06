@@ -3,8 +3,10 @@
 
 /*==================== IMPORT COMPONENTS CSS ====================*/
 @import './components/nav.css';
+@import './components/button.css';
 @import './components/home.css';
 @import './components/about.css';
+@import './components/skills.css';
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -157,6 +159,12 @@ img {
   background-color: var(--body-color);
 }
 
+
+#ruby-logo {
+  height:24px;
+  width: 24px;
+
+}
 /* Active link */
 
 
@@ -165,7 +173,10 @@ img {
 
 
 
-/*==================== SKILLS ====================*/
+
+
+
+
 
 
 /*==================== QUALIFICATION ====================*/

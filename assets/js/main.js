@@ -1,7 +1,7 @@
 /*==================== JS Plugins ====================*/
 import './plugins/nav.js';
+import './plugins/accordion_skills.js';
 
-/*==================== ACCORDION SKILLS ====================*/
 
 
 /*==================== QUALIFICATION TABS ====================*/
