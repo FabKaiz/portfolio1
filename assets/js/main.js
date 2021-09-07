@@ -2,9 +2,8 @@
 import './plugins/nav.js';
 import './plugins/accordion_skills.js';
 import './plugins/qualification.js';
+import './plugins/modal_services.js';
 
-
-/*==================== SERVICES MODAL ====================*/
 
 
 /*==================== PORTFOLIO SWIPER  ====================*/
