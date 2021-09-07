@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
   <!--==================== SWIPER CSS ====================-->
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
   <!--==================== CSS ====================-->
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -586,8 +586,67 @@
 
     <!--==================== PORTFOLIO ====================-->
     <section class="portfolio section" id="portfolio">
+      <h2 class="section__title">Portfolio</h2>
+      <span class="section__subtitle">My recent work</span>
 
+      <div class="portfolio__container container swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!--==================== PORTFOLIO 1 ====================-->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/img/port1.png" alt="screenshot of my school project" class="portfolio__img">
 
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Chin-up</h3>
+              <p class="portfolio__description">My <strong>2 weeks</strong> project for <strong>Le Wagon Lyon</strong>: <i>Website made for
+                  introverts and/or shy people to meet new people easily.</i></p>
+              <a href="https://www.chin-up.xyz/" target="_blank"
+                class="button button--flex button--small portfolio__button">
+                Try it here
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--==================== PORTFOLIO 2 ====================-->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/img/port2.png" alt="screenshot of my school project" class="portfolio__img">
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Grab a star</h3>
+              <p class="portfolio__description"><strong>5 days </strong>project for <strong>Le Wagon Lyon</strong>: <i>"Fake Airbnb clone" where you can rent your favorite star for a day,</i> my first project and first time working in a team.</p>
+              <a href="https://grab-a-star.herokuapp.com/" target="_blank"
+                class="button button--flex button--small portfolio__button">
+                Try it here
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--==================== PORTFOLIO 3 ====================-->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/img/port3.png" alt="screenshot of a personal project" class="portfolio__img">
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Vanilla JavaScript components</h3>
+              <p class="portfolio__description">Simple page to reproduce some popular JavaScript components like a <strong>calculator</strong>, <strong>timer</strong>, <strong>password generator</strong>, circle following the mouse and many more using only simple JavaScript.This page and a more complex one will be available soon.</p>
+              <a href="#portfolio"
+                class="button button--flex button--small portfolio__button">
+                Coming soon
+                <i class="uil uil-smile button__icon button__soon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- === SWIPER ARROW === -->
+        <div class="swiper-button-next">
+          <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        </div>
+        <!-- === SWIPER PAGINATION === -->
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
 
     <!--==================== PROJECT IN MIND ====================-->
@@ -619,7 +678,7 @@
 
 
   <!--==================== SWIPER JS ====================-->
-  <script src=""></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
 
   <!--==================== MAIN JS ====================-->
   <script type="module" src="assets/js/main.js"></script>
