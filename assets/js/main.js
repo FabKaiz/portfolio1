@@ -1,10 +1,7 @@
 /*==================== JS Plugins ====================*/
 import './plugins/nav.js';
 import './plugins/accordion_skills.js';
-
-
-
-/*==================== QUALIFICATION TABS ====================*/
+import './plugins/qualification.js';
 
 
 /*==================== SERVICES MODAL ====================*/
