@@ -10,6 +10,7 @@
 @import './components/qualification.css';
 @import './components/services.css';
 @import './components/portfolio.css';
+@import './components/project.css';
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -174,7 +175,11 @@ img {
 /* Change background header */
 
 
-/*==================== PROJECT IN MIND ====================*/
+
+
+
+
+
 
 
 /*==================== TESTIMONIAL ====================*/

@@ -39,8 +39,20 @@
   color: var(--first-color);
 }
 
+.button--white {
+  background-color: #fff;
+  color: var(--first-color)
+}
+
+.button--white:hover {
+  background-color: #fff;
+}
+
+.button--white:hover .button__icon {
+  transform: rotate(90deg);
+}
+
 .button__icon-medium {
   font-size: 2rem;
   color: var(--text-color-light);
 }
-
