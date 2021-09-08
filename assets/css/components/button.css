@@ -52,6 +52,21 @@
   transform: rotate(90deg);
 }
 
+.button--formsubmit {
+  border: none;
+	font: inherit;
+	cursor: pointer;
+}
+
+.button--span {
+  cursor: pointer;
+}
+
+.button--span:hover {
+  color: #fff;
+  background-color:var(--first-color-alt);
+}
+
 .button__icon-medium {
   font-size: 2rem;
   color: var(--text-color-light);

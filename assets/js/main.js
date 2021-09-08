@@ -1,21 +1,17 @@
 /*==================== JS Plugins ====================*/
-import './plugins/nav.js';
-import './plugins/accordion_skills.js';
-import './plugins/qualification.js';
-import './plugins/modal_services.js';
-import './plugins/portfolio.js';
+import "./plugins/nav.js";
+import "./plugins/accordion_skills.js";
+import "./plugins/qualification.js";
+import "./plugins/modal_services.js";
+import "./plugins/portfolio.js";
+import "./plugins/contact.js";
 
-
-/*==================== TESTIMONIAL ====================*/
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
+/*==================== CHANGE BACKGROUND HEADER ====================*/
 
-/*==================== CHANGE BACKGROUND HEADER ====================*/ 
+/*==================== SHOW SCROLL UP ====================*/
 
-
-/*==================== SHOW SCROLL UP ====================*/ 
-
-
-/*==================== DARK LIGHT THEME ====================*/ 
+/*==================== DARK LIGHT THEME ====================*/
