@@ -10,6 +10,10 @@
 
   <!--==================== SWIPER CSS ====================-->
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <!--==================== AOS Animate On Scroll ====================-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 
   <!--==================== CSS ====================-->
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -91,7 +95,7 @@
               <i class="uil uil-youtube"></i>
             </a>
           </div>
-          <div class="home__img">
+          <div class="home__img" data-aos="fade-left" data-aos-duration="2000" data-aos-easing="linear">
             <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
               <mask id="mask0" mask-type="alpha">
@@ -110,9 +114,9 @@
             </svg>
           </div>
           <div class="home__data">
-            <h1 class="home__title">Hi, I'm Fabien</h1>
-            <h3 class="home__subtitle">Front-end Web developper </h3>
-            <p class="home__description">Junior front-end developper recently graduated at Le Wagon Lyon</p>
+            <h1 class="home__title " data-aos="fade-right" data-aos-duration="2000" data-aos-delay="600">Hi, I'm Fabien</h1>
+            <h3 class="home__subtitle" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">Front-end Web developper </h3>
+            <p class="home__description" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">Junior front-end developper recently graduated at Le Wagon Lyon</p>
             <a href="#contact" class="button button--flex">
               Contact me <i class="uil uil-message button__icon"></i>
             </a>
@@ -133,8 +137,8 @@
       <h2 class="section__title">About Me</h2>
       <span class="section__subtitle">My Introduction</span>
       <div class="about__container container grid">
-        <img src="assets/img/meabout.jpg" alt="picture of myself" class="about__img">
-        <div class="about__data">
+        <img src="assets/img/meabout.jpg" alt="picture of myself" class="about__img" data-aos="fade-right">
+        <div class="about__data" data-aos="fade-left" data-aos-duration="1000">
           <p class="about__description">After working 7 years in a car body repair I decided to change my life to do
             what I realy like and become a <strong>Web Developer</strong>. I did <strong>9</strong> weeks at <strong>Le
               Wagon Lyon</strong> with <strong>2 weeks of team project.</strong> Now
@@ -176,7 +180,7 @@
       <div class="skills__container container">
         <!-- <div> -->
           <!--==================== SKILLS 1 ====================-->
-          <div class="skills__content skills__open">
+          <div class="skills__content skills__open" data-aos="fade-right">
             <div class="skills__header">
               <i class="uil uil-desktop skills__icon"></i>
               <div>
@@ -208,7 +212,7 @@
           </div>
 
           <!--==================== SKILLS 2 ====================-->
-          <div class="skills__content skills__close">
+          <div class="skills__content skills__close" data-aos="fade-left">
             <div class="skills__header">
               <i class="uil uil-server skills__icon"></i>
               <div>
@@ -266,7 +270,7 @@
           </div>
 
           <!--==================== SKILLS 3 ====================-->
-          <div class="skills__content skills__close">
+          <div class="skills__content skills__close" data-aos="fade-right">
             <div class="skills__header">
               <i class="uil uil-swatchbook skills__icon"></i>
               <div>
@@ -366,7 +370,7 @@
 
     <!--==================== QUALIFICATIONS ====================-->
     <section class="qualification section">
-      <h2 class="section__title">Qualification</h2>
+      <h2 class="section__title" data-aos="fade-down">Qualification</h2>
       <span class="section__subtitle">My personal journey</span>
 
       <div class="qualification__container container">
@@ -507,7 +511,7 @@
       <div class="services__container container grid">
         <!--==================== SERVICE 1 ====================-->
 
-        <div class="services__content">
+        <div class="services__content" data-aos="fade-right">
           <div>
             <i class="uil uil-web-grid services__icon"></i>
             <h3 class="services__title">Website <br> mock-up</h3>
@@ -544,7 +548,7 @@
 
         <!--==================== SERVICE 2 ====================-->
 
-        <div class="services__content">
+        <div class="services__content" data-aos="fade-left">
           <div>
             <i class="uil uil-arrow services__icon"></i>
             <h3 class="services__title">Front-end<br> development</h3>
@@ -593,7 +597,7 @@
       <h2 class="section__title">Portfolio</h2>
       <span class="section__subtitle">My recent work</span>
 
-      <div class="portfolio__container container swiper mySwiper">
+      <div class="portfolio__container container swiper mySwiper" data-aos="fade-up" data-aos-duration="1000">
         <div class="swiper-wrapper">
           <!--==================== PORTFOLIO 1 ====================-->
           <div class="portfolio__content grid swiper-slide">
@@ -666,7 +670,7 @@
             </a>
           </div>
 
-          <img src="assets/img/me-removebg_copie.png" alt="picture of myself" class="project__img">
+          <img src="assets/img/me-removebg_copie.png" alt="picture of myself" class="project__img" data-aos="fade-left" data-aos-duration="1000">
         </div>
       </div>
 
@@ -785,6 +789,9 @@
   <a href="#" class="scrollup" id="scroll-up">
     <i class="uil uil-arrow-up scrollup__icon"></i>
   </a>
+
+  <!--==================== AOS Animate On Scroll ====================-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!--==================== SWIPER JS ====================-->
   <script src="assets/js/swiper-bundle.min.js"></script>

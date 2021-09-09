@@ -17,3 +17,6 @@ import "./plugins/show_scroll_btn.js"
 
 /*==================== DARK LIGHT THEME ====================*/
 import "./plugins/dark_light_theme.js";
+
+/*==================== AOS Animate On Scroll ====================*/
+AOS.init();
