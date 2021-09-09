@@ -217,7 +217,7 @@ img {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 365px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
