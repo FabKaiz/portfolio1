@@ -1,6 +1,7 @@
 /*==================== SKILLS ====================*/
 .skills__container {
   row-gap: 0;
+  display: block;
 }
 
 .skills__header {
@@ -43,11 +44,10 @@
   transition: .3s;
 }
 
-.skills__titles{
+.skills__titles {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .skills__name {
