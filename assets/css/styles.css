@@ -12,6 +12,7 @@
 @import './components/portfolio.css';
 @import './components/project.css';
 @import './components/contact.css';
+@import './components/footer.css';
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -175,8 +176,6 @@ img {
 
 /* Change background header */
 
-
-/*==================== FOOTER ====================*/
 
 
 /*========== SCROLL UP ==========*/
