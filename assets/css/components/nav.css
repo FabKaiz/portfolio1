@@ -80,6 +80,14 @@
   }
 }
 
+.switch__lang {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
 /* show menu */
 .show-menu {
   bottom: 0;
