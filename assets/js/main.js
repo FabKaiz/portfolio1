@@ -22,7 +22,7 @@ import "./plugins/dark_light_theme.js";
 // AOS.init({disable: 'mobile'});
 AOS.init({
   disable: function() {
-    const maxWidth = 900;
+    const maxWidth = 850;
     return window.innerWidth < maxWidth;
   }
 });
