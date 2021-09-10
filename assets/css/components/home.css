@@ -65,7 +65,7 @@
 }
 
 .home__scroll-button:hover {
-  transform: translateY(.25rem);
+  transform: translateY(.5rem);
 }
 
 .home__scroll-mouse {

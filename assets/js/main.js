@@ -19,4 +19,21 @@ import "./plugins/show_scroll_btn.js"
 import "./plugins/dark_light_theme.js";
 
 /*==================== AOS Animate On Scroll ====================*/
-AOS.init();
+// AOS.init({disable: 'mobile'});
+AOS.init({
+  disable: function() {
+    const maxWidth = 850;
+    return window.innerWidth < maxWidth;
+  }
+});
+
+/*==================== Change language ====================*/
+const languageBtn = document.getElementById("switch-lang");
+
+languageBtn.addEventListener('click', () => {
+  if(languageBtn.innerText === "FR") {
+    window.location = 'french.html'
+  } else {
+    window.location = 'index.html'
+  }
+})
