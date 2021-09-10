@@ -22,7 +22,7 @@ import "./plugins/dark_light_theme.js";
 // AOS.init({disable: 'mobile'});
 AOS.init({
   disable: function() {
-    const maxWidth = 850;
+    const maxWidth = 900;
     return window.innerWidth < maxWidth;
   }
 });
@@ -31,8 +31,8 @@ AOS.init({
 const languageBtn = document.getElementById("switch-lang");
 
 languageBtn.addEventListener('click', () => {
-  if(languageBtn.innerText === "FR") {
-    window.location = 'french.html'
+  if(languageBtn.innerText === "EN") {
+    window.location = 'en.html'
   } else {
     window.location = 'index.html'
   }

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--==================== UNICONS ====================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <!--==================== SWIPER CSS ====================-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <!--==================== AOS Animate On Scroll ====================-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <link rel="icon" href="assets/img/FC-logo-final.png">
+  <title>Fabien Chareun's Portfolio</title>
+</head>
+
+<body>
+  <!--==================== HEADER ====================-->
+  <header class=" header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <div class="nav__logo-container">
+          <img src="assets/img/FC-logo.png" alt="My logo FC">
+          Fabien
+        </div>
+      </a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class="uil uil-estate nav__icon"></i>
+              Home
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">
+              <i class="uil uil-user nav__icon"></i>
+              About me
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class="uil uil-file-info-alt nav__icon"></i>
+              Skills
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">
+              <i class="uil uil-briefcase nav__icon"></i>
+              Services
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">
+              <i class="uil uil-scenery nav__icon"></i>
+              Portfolio
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <i class="uil uil-message nav__icon"></i>
+              Contact
+            </a>
+          </li>
+        </ul>
+        <i class="uil uil-times nav__close" id="nav-close"></i>
+      </div>
+      <div class="nav__btns">
+        <!-- Darkmode btn -->
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
+        <!-- Switch language btn -->
+        <span class="switch__lang" id="switch-lang">
+          FR
+        </span>
+        <i class="uil change-theme" id="switch-lang"></i>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__content grid">
+          <div class="home__social">
+            <a href="https://github.com/FabKaiz" target="_blank" class="home__social-icon">
+              <i class="uil uil-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/fabien-chareun/" target="_blank" class="home__social-icon">
+              <i class="uil uil-linkedin"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=hJlf25bwRkI&list=PLwqwOtDwK_Zar-JrPOEAMDwYRiGay7Xw6&ab_channel=LeWagonLyon"
+              target="_blank" class="home__social-icon">
+              <i class="uil uil-youtube"></i>
+            </a>
+          </div>
+          <div class="home__img">
+            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <mask id="mask0" mask-type="alpha">
+                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                  130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                  97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                  0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+              </mask>
+              <g mask="url(#mask0)">
+                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                  165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                  129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                  -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                <image class="home__blob-img" x="10" y="-5" xlink:href="assets/img/profil.png" />
+              </g>
+            </svg>
+          </div>
+          <div class="home__data">
+            <h1 class="home__title " data-aos="slide-right" data-aos-duration="2000" data-aos-delay="50">Hi, I'm Fabien</h1>
+            <h3 class="home__subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100">Front-end Web developper </h3>
+            <p class="home__description" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1900">Junior front-end developper recently graduated <br> at Le Wagon Lyon</p>
+            <a href="#contact" class="button button--flex">
+              Contact me <i class="uil uil-message button__icon"></i>
+            </a>
+          </div>
+        </div>
+        <div class="home__scroll">
+          <a href="#about" class="home__scroll-button button--flex">
+            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+            <span class="home__scroll-name">Scroll-down</span>
+            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+      <h2 class="section__title">About Me</h2>
+      <span class="section__subtitle">My Introduction</span>
+      <div class="about__container container grid">
+        <img src="assets/img/meabout.jpg" alt="picture of myself" class="about__img" data-aos="fade-right">
+        <div class="about__data" data-aos="fade-left" data-aos-duration="1000">
+          <p class="about__description">After working 7 years in a car body repair I decided to change my life to do
+            what I realy like and become a <strong>Web Developer</strong>. I did <strong>9</strong> weeks at <strong>Le
+              Wagon Lyon</strong> with <strong>2 weeks of team project.</strong> Now
+            I want to specialize myself in <strong>Front-end.</strong> </p>
+          <div class="about__info">
+            <div>
+              <span class="about__info-title">11+</span>
+              <span class="about__info-name">Code <br> tools used </span>
+            </div>
+            <div>
+              <span class="about__info-title">4+</span>
+              <span class="about__info-name">Completed <br> project</span>
+            </div>
+            <div>
+              <span class="about__info-title">10+</span>
+              <span class="about__info-name">Code <br> languages used</span>
+            </div>
+          </div>
+          <div class="about__buttons">
+            <a target="_blank"
+              href="https://flash-handball-7c5.notion.site/Fabien-Chareun-0534008f12c14f299289e8285c7de2ff"
+              class="button button--flex">
+              Open CV <svg fill="#fff" class="button__icon" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+                viewBox="12 0.18999999999999906 487.619 510.941">
+                <path
+                  d="M96.085 91.118c15.81 12.845 21.741 11.865 51.43 9.884l279.888-16.806c5.936 0 1-5.922-.98-6.906L379.94 43.686c-8.907-6.915-20.773-14.834-43.516-12.853L65.408 50.6c-9.884.98-11.858 5.922-7.922 9.883zm16.804 65.228v294.491c0 15.827 7.909 21.748 25.71 20.769l307.597-17.799c17.81-.979 19.794-11.865 19.794-24.722V136.57c0-12.836-4.938-19.758-15.84-18.77l-321.442 18.77c-11.863.997-15.82 6.931-15.82 19.776zm303.659 15.797c1.972 8.903 0 17.798-8.92 18.799l-14.82 2.953v217.412c-12.868 6.916-24.734 10.87-34.622 10.87-15.831 0-19.796-4.945-31.654-19.76l-96.944-152.19v147.248l30.677 6.922s0 17.78-24.75 17.78l-68.23 3.958c-1.982-3.958 0-13.832 6.921-15.81l17.805-4.935V210.7l-24.721-1.981c-1.983-8.903 2.955-21.74 16.812-22.736l73.195-4.934 100.889 154.171V198.836l-25.723-2.952c-1.974-10.884 5.927-18.787 15.819-19.767zM42.653 23.919l281.9-20.76c34.618-2.969 43.525-.98 65.283 14.825l89.986 63.247c14.848 10.876 19.797 13.837 19.797 25.693v346.883c0 21.74-7.92 34.597-35.608 36.564L136.64 510.14c-20.785.991-30.677-1.971-41.562-15.815l-66.267-85.978C16.938 392.52 12 380.68 12 366.828V58.495c0-17.778 7.922-32.608 30.653-34.576z"
+                  fill-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SKILLS ====================-->
+    <section class="skills section" id="skills">
+      <h2 class="section__title">Skills</h2>
+      <span class="section__subtitle">My technical skills</span>
+      <div class="skills__container container" data-aos="slide-up" data-aos-duration="900">
+        <!-- <div> -->
+          <!--==================== SKILLS 1 ====================-->
+          <div class="skills__content skills__open">
+            <div class="skills__header">
+              <i class="uil uil-desktop skills__icon"></i>
+              <div>
+                <h1 class="skills__title">Front-end Development</h1>
+                <span class="skills__subtitle">7+ languages</span>
+              </div>
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <i class="uil uil-html5-alt button__icon-medium"></i>
+                  <h3 class="skills__name">HTML</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <i class="uil uil-css3-simple button__icon-medium"></i>
+                  <h3 class="skills__name">CSS / SCSS / BS</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <i class="uil uil-java-script button__icon-medium"></i>
+                  <h3 class="skills__name">JavaScript ES6</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== SKILLS 2 ====================-->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-server skills__icon"></i>
+              <div>
+                <h1 class="skills__title">Back-end Development</h1>
+                <span class="skills__subtitle">3+ languages</span>
+              </div>
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <?xml version="1.0" encoding="iso-8859-1"?>
+                  <svg fill="var(--text-color-light)" width="28" height="28" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g>
+                      <path d="M510.228,166.833L412.915,42.98c-1.573-2-3.978-3.169-6.522-3.169H105.606c-2.545,0-4.95,1.169-6.521,3.169L1.772,166.833
+                        c-2.435,3.1-2.352,7.485,0.198,10.49l247.706,291.94c1.576,1.858,3.888,2.927,6.324,2.927c2.436,0,4.748-1.07,6.324-2.927
+                        l247.706-291.94C512.58,174.318,512.663,169.932,510.228,166.833z M394.573,56.398l-35.771,98.898l-84.771-98.898H394.573z
+                        M344.127,163.664H167.872l88.127-102.815L344.127,163.664z M237.968,56.398l-84.77,98.898l-35.773-98.898H237.968z
+                        M102.891,64.984l35.694,98.68H25.357L102.891,64.984z M26.207,180.251h118.377l87.96,243.183L26.207,180.251z M255.999,439.514
+                        l-93.776-259.263h187.551L255.999,439.514z M279.455,423.433l87.959-243.182h118.377L279.455,423.433z M373.413,163.664
+                        l35.693-98.681l77.535,98.681H373.413z" />
+                    </g>
+                  </svg>
+                  <h3 class="skills__name">Ruby</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="28" width="60" viewBox="0 0 395.9 139.2">
+                    <g fill="var(--text-color-light)">
+                      <path
+                        d="M344.6 121.1v18.1h32.7c6.7 0 18.2-4.9 18.6-18.6v-7c0-11.7-9.6-18.6-18.6-18.6H361v-8.4h32.3V68.4h-31c-8 0-18.7 6.6-18.7 18.9v6.3c0 12.3 10.6 18.6 18.7 18.6 22.5.1-5.4 0 15.4 0v8.8m-208.3-4.3s17.5-1.5 17.5-24.1-21.2-24.7-21.2-24.7h-38.2v71.3h19.2V122l16.6 17.2h28.4zm-7.4-14.6h-15.3V85.8h15.4s4.3 1.6 4.3 8.1-4.4 8.2-4.4 8.2zm72.3-33.7h-19.5c-13.9 0-18.6 12.6-18.6 18.6v52.2h19.5v-12.5H234v12.5h18.9V87c0-15.2-13.8-18.6-18.6-18.6zm-.3 38.1h-18.4V89.2s0-3.9 6.1-3.9h6.7c5.4 0 5.5 3.9 5.5 3.9v17.3zm27.8-38.1h20.3v70.8h-20.3zm28.6 0v70.8h47.5v-18.3h-27.3V68.4z" />
+                      <path
+                        d="M7 139.2h79s-15.1-68.9 34.9-96.8c10.9-5.3 45.6-25.1 102.4 16.9 1.8-1.5 3.5-2.7 3.5-2.7s-52-51.9-109.9-46.1C87.8 13.1 52 39.6 31 74.6c-21 35-24 64.6-24 64.6z" />
+                      <path
+                        d="M7 139.2h79s-15.1-68.9 34.9-96.8c10.9-5.3 45.6-25.1 102.4 16.9 1.8-1.5 3.5-2.7 3.5-2.7s-52-51.9-109.9-46.1C87.8 13.1 52 39.6 31 74.6c-21 35-24 64.6-24 64.6z" />
+                      <path
+                        d="M7 139.2h79s-15.1-68.9 34.9-96.8c10.9-5.3 45.6-25.1 102.4 16.9 1.8-1.5 3.5-2.7 3.5-2.7s-52-51.9-109.9-46.1c-29.2 2.6-65 29.1-86 64.1-21 35-23.9 64.6-23.9 64.6zM171.6 16.1l.4-6.7c-.9-.5-3.4-1.7-9.7-3.5l-.4 6.6c3.3 1.1 6.5 2.3 9.7 3.6z" />
+                      <path
+                        d="M162.1 37.3l-.4 6.3c3.3.1 6.6.5 9.9 1.2l.4-6.2c-3.4-.7-6.7-1.1-9.9-1.3zm-37-31.2h1l-2-6.1c-3.1 0-6.3.2-9.6.6l1.9 5.9c2.9-.3 5.8-.4 8.7-.4zm4.8 36.8l2.3 6.9c2.9-1.4 5.8-2.6 8.7-3.5l-2.2-6.6c-3.4 1-6.3 2.1-8.8 3.2zM84.5 16.6L80 9.7c-2.5 1.3-5.1 2.7-7.8 4.3l4.6 7c2.6-1.6 5.1-3.1 7.7-4.4zm20.5 45l4.8 7.2c1.7-2.5 3.7-4.8 5.9-7.1l-4.5-6.8c-2.3 2.1-4.4 4.4-6.2 6.7zM90.5 93.8l8.1 6.4c.4-3.9 1.1-7.8 2.1-11.7l-7.2-5.7c-1.3 3.7-2.2 7.4-3 11zM46.7 46.3l-7.1-6.2c-2.6 2.5-5.1 5-7.4 7.5l7.7 6.6c2.1-2.7 4.4-5.4 6.8-7.9zM16.5 91L5 86.8c-1.9 4.3-4 9.3-5 12l11.5 4.2c1.3-3.4 3.4-8.3 5-12zM89 119.2c.2 5.3.7 9.6 1.2 12.6l12 4.3c-.9-3.9-1.8-8.3-2.4-13z" />
+                    </g>
+                  </svg>
+                  <h3 class="skills__name">RoR framework</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <i class="uil uil-database button__icon-medium"></i>
+                  <h3 class="skills__name">DataBase / SQL</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== SKILLS 3 ====================-->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-swatchbook skills__icon"></i>
+              <div>
+                <h1 class="skills__title">Others tools</h1>
+                <span class="skills__subtitle">11 tools</span>
+              </div>
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="22" height="28">
+                    <style type="text/css">
+                      .st0 {
+                        fill: var(--text-color-light)
+                      }
+
+                      .st1 {
+                        fill: var(--text-color-light)
+                      }
+
+                      .st2 {
+                        fill: var(--text-color-light)
+                      }
+
+                      .st3 {
+                        fill: var(--text-color-light)
+                      }
+
+                      .st4 {
+                        fill: var(--text-color-light)
+                      }
+                    </style>
+                    <title>Figma.logo</title>
+                    <desc>Created using Figma</desc>
+                    <path id="path0_fill" class="st0"
+                      d="M50 300c27.6 0 50-22.4 50-50v-50H50c-27.6 0-50 22.4-50 50s22.4 50 50 50z" />
+                    <path id="path1_fill" class="st1"
+                      d="M0 150c0-27.6 22.4-50 50-50h50v100H50c-27.6 0-50-22.4-50-50z" />
+                    <path id="path1_fill_1_" class="st2" d="M0 50C0 22.4 22.4 0 50 0h50v100H50C22.4 100 0 77.6 0 50z" />
+                    <path id="path2_fill" class="st3" d="M100 0h50c27.6 0 50 22.4 50 50s-22.4 50-50 50h-50V0z" />
+                    <path id="path3_fill" class="st4"
+                      d="M200 150c0 27.6-22.4 50-50 50s-50-22.4-50-50 22.4-50 50-50 50 22.4 50 50z" />
+                  </svg>
+                  <h3 class="skills__name">Figma</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"
+                    width="28" height="28">
+                    <path fill="var(--text-color-light)"
+                      d="M1.25,21.841C1.25,23.039,2.207,24,3.406,24h17.188c1.198,0,2.155-0.961,2.155-2.159V2.16C22.751,0.96,21.794,0,20.595,0H3.406C2.207,0,1.25,0.96,1.25,2.16V21.841L1.25,21.841z M2.448,2.16c0-0.54,0.419-0.961,0.958-0.961h17.188c0.538,0,0.958,0.421,0.958,0.961v19.681c0,0.539-0.42,0.96-0.958,0.96H3.406c-0.539,0-0.958-0.422-0.958-0.96V2.16L2.448,2.16z" />
+                    <path fill="#DEDEDE"
+                      d="M12,1.199H3.406c-0.539,0-0.958,0.421-0.958,0.961v19.681c0,0.539,0.419,0.96,0.958,0.96H12V12.063C10.05,12.381,8.258,13.2,8.258,13.2l-1.677,0.78V3.6h2.395v6.84C9.812,10.148,10.881,9.854,12,9.704V1.199L12,1.199z" />
+                    <path fill="var(--text-color-light)"
+                      d="M13.409,11.94c1.197,0,1.497,0.66,1.497,1.26v7.2h2.395v-7.2c0.059-0.179,0.059-1.501-0.959-2.52c-0.478-0.48-1.377-1.08-2.874-1.08c-1.618,0-3.295,0.421-4.492,0.84V3.6H6.581v10.38l1.677-0.78C8.258,13.2,11.014,11.94,13.409,11.94L13.409,11.94z" />
+                    <path fill="var(--text-color-light)"
+                      d="M12,0H3.406C2.207,0,1.25,0.96,1.25,2.16v19.681C1.25,23.039,2.207,24,3.406,24H12v-1.199H3.406c-0.539,0-0.958-0.422-0.958-0.96V2.16c0-0.54,0.419-0.961,0.958-0.961H12V0L12,0z" />
+                    <path fill="var(--text-color-light)"
+                      d="M8.976,3.6H6.581v10.38l1.677-0.78c0,0,1.792-0.819,3.742-1.137V9.704c-1.119,0.151-2.188,0.444-3.024,0.736V3.6L8.976,3.6z" />
+                    <polygon fill="var(--text-color-light)" points="6.641 20.399 9.335 18 6.641 15.6 6.641 20.399" />
+                    <polygon fill="var(--text-color-light)"
+                      points="6.641 15.6 6.641 20.399 7.584 19.559 7.584 16.441 6.641 15.6" />
+                    <path fill="var(--text-color-light)"
+                      d="M17.36,3.6h-2.394c-0.24,1.379-0.839,2.64-1.798,3.9h2.397C16.641,6.24,17.181,4.979,17.36,3.6L17.36,3.6z" />
+                    <path fill="var(--text-color-light)"
+                      d="M15.335,3.6h-0.369c-0.24,1.379-0.839,2.64-1.798,3.9h2.167V3.6L15.335,3.6z" />
+                  </svg>
+                  <h3 class="skills__name">Heroku</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <i class="uil uil-github-alt button__icon-medium" id="gh-logo"></i>
+                  <h3 class="skills__name">Git / GitHub</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" id="hj-logo" enable-background="new 0 0 24 24"
+                    viewBox="0 0 24 24">
+                    <path fill="var(--text-color-light)"
+                      d="M22.422,16.568c0.744-2.87,0.177-6.189-1.262-8.754C17.575,1.403,7.061,0,7.061,0s4.852,5.342-1.348,9.566c-3.921,2.666-5.471,6.131-3.791,9.915C3.207,22.379,5.928,23.56,8.86,24c-1.402-2.666-0.316-5.922-0.197-6.271c2.741,4.181,7.918,0,5.318-4.544c3.407,0.745,3.916,6.707,1.3,10.428C19.144,22.389,21.717,19.311,22.422,16.568z" />
+                  </svg>
+                  <h3 class="skills__name">Hotjar</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- </div> -->
+        
+      </div>
+
+    </section>
+
+    <!--==================== QUALIFICATIONS ====================-->
+    <section class="qualification section">
+      <h2 class="section__title" data-aos="fade-down">Qualification</h2>
+      <span class="section__subtitle">My personal journey</span>
+
+      <div class="qualification__container container">
+        <div class="qualification__tabs">
+          <div class="qualification__button button--flex qualification__active" data-target="#education">
+            <i class="uil uil-graduation-cap qualification__icon"></i>
+            Education
+          </div>
+          <div class="qualification__button button--flex" data-target="#work">
+            <i class="uil uil-briefcase qualification__icon"></i>
+            Work
+          </div>
+        </div>
+
+        <div class="qualification_sections">
+          <!--==================== QUALIFICATION CONTENT 1 ====================-->
+          <div class="qualification__content qualification__active" data-content id="education">
+            <!--==================== QUALIFICATION 1 ====================-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Previous profession</h3>
+                <span class="qualification__subtitle">SEPR - Lyon</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2012 - 2015
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+
+            </div>
+
+            <!--==================== QUALIFICATION 2 ====================-->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+              <div>
+                <h3 class="qualification__title">Designer / Developer of web applications</h3>
+                <span class="qualification__subtitle">Le Wagon - Lyon</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  April 2021 - June 2021
+                </div>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATION 3 ====================-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">JavaScript online course</h3>
+                <span class="qualification__subtitle">Chris Sev - Better Dev & Udemy</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  June 2021 - Now
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+
+            </div>
+
+          </div>
+          <!--==================== QUALIFICATION CONTENT 2 ====================-->
+          <div class="qualification__content" data-content id="work">
+            <!--==================== QUALIFICATION 1 ====================-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Previous profession</h3>
+                <span class="qualification__subtitle">Carrosserie G. - Lyon</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2012 - 2020
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+
+            </div>
+
+            <!-- ==================== QUALIFICATION 2 ====================
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+              <div>
+                <h3 class="qualification__title">Designer / Developer of web applications</h3>
+                <span class="qualification__subtitle">Le Wagon - Lyon</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  April 2021 - June 2021
+                </div>
+              </div>
+            </div> -->
+
+            <!--==================== QUALIFICATION 3 ====================-->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+              <div>
+                <h3 class="qualification__title">Looking for a Front-end job</h3>
+                <span class="qualification__subtitle">In person or remote</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  Now
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--==================== SERVICES ====================-->
+    <section class="services section" id="services">
+      <h2 class="section__title" data-aos="fade-up">Services</h2>
+      <span class="section__subtitle" data-aos="fade-up">What i offer</span>
+
+      <div class="services__container container grid">
+        <!--==================== SERVICE 1 ====================-->
+
+        <div class="services__content">
+          <div>
+            <i class="uil uil-web-grid services__icon"></i>
+            <h3 class="services__title">Website <br> mock-up</h3>
+          </div>
+
+          <span class="button button--flex button--small button--link services__button">
+            View more <i class="uil uil-arrow-right button__icon"></i>
+          </span>
+
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <h4 class="services__modal-title">Website Mock-up</h4>
+              <i class="uil uil-times services__modal-close"></i>
+
+              <ul class="services__modal-services grid">
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>Define the product's target users</p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>Create one or more user stories</p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>Build an interactive prototype with Figma</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--==================== SERVICE 2 ====================-->
+
+        <div class="services__content">
+          <div>
+            <i class="uil uil-arrow services__icon"></i>
+            <h3 class="services__title">Front-end<br> development</h3>
+          </div>
+
+          <span class="button button--flex button--small button--link services__button">
+            View more <i class="uil uil-arrow-right button__icon"></i>
+          </span>
+
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <h4 class="services__modal-title">Front-end development</h4>
+              <i class="uil uil-times services__modal-close"></i>
+
+              <ul class="services__modal-services grid">
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>Development of the user interface</p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>Create modern animations</p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>Give a fresh look to your old website</p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>Clean code</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--==================== PORTFOLIO ====================-->
+    <section class="portfolio section" id="portfolio">
+      <h2 class="section__title">Portfolio</h2>
+      <span class="section__subtitle">My recent work</span>
+
+      <div class="portfolio__container container swiper mySwiper" data-aos="fade-up" data-aos-duration="1000">
+        <div class="swiper-wrapper">
+          <!--==================== PORTFOLIO 1 ====================-->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/img/port1.png" alt="screenshot of my school project" class="portfolio__img">
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Chin-up</h3>
+              <p class="portfolio__description">My <strong>2 weeks</strong> project for <strong>Le Wagon Lyon</strong>: <i>Website made for
+                  introverts and/or shy people to meet new people easily.</i></p>
+              <a href="https://www.chin-up.xyz/" target="_blank"
+                class="button button--flex button--small portfolio__button">
+                Try it here
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--==================== PORTFOLIO 2 ====================-->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/img/port2.png" alt="screenshot of my school project" class="portfolio__img">
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Grab a star</h3>
+              <p class="portfolio__description"><strong>5 days </strong>project for <strong>Le Wagon Lyon</strong>: <i>"Fake Airbnb clone" where you can rent your favorite star for a day,</i> my first project and first time working in a team.</p>
+              <a href="https://grab-a-star.herokuapp.com/" target="_blank"
+                class="button button--flex button--small portfolio__button">
+                Try it here
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--==================== PORTFOLIO 3 ====================-->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/img/port3.png" alt="screenshot of a personal project" class="portfolio__img">
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Vanilla JavaScript components</h3>
+              <p class="portfolio__description">Simple page to reproduce some popular JavaScript components like a <strong>calculator</strong>, <strong>timer</strong>, <strong>password generator</strong>, circle following the mouse and many more using only simple JavaScript.This page and a more complex one will be available soon.</p>
+              <a href="#portfolio"
+                class="button button--flex button--small portfolio__button">
+                Coming soon
+                <i class="uil uil-smile button__icon button__soon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- === SWIPER ARROW === -->
+        <div class="swiper-button-next">
+          <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        </div>
+        <!-- === SWIPER PAGINATION === -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!--==================== PROJECT ====================-->
+    <section class="project section">
+      <div class="project__bg">
+        <div class="project__container container grid">
+          <div class="project__data">
+            <h2 class="project__title">Looking for a Front-end dev ?</h2>
+            <p class="project__description">I'm <strong>open to all offers</strong>, working from home or in office (arround <strong>Lyon</strong>), permanent or temporary contracts.</p>
+            <a href="#contact" class="button button--flex button--white">
+              Contact me
+              <i class="uil uil-message project__icon button__icon"></i>
+            </a>
+          </div>
+
+          <img src="assets/img/me-removebg_copie.png" alt="picture of myself" class="project__img" data-aos="fade-left" data-aos-duration="1000">
+        </div>
+      </div>
+
+    </section>
+
+    <!--==================== CONTACT ME ====================-->
+    <section class="contact section" id="contact">
+      <h2 class="section__title">Contact me</h2>
+      <span class="section__subtitle">Get in touch</span>
+      <div class="contact__container container grid">
+        <div>
+          <div class="contact__information">
+            <i class="uil uil-phone contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Phone</h3>
+              <span class="contact__subtitle">+33 6 21 71 16 70</span>
+            </div>
+          </div>
+          <div class="contact__information">
+            <i class="uil uil-at contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Email</h3>
+              <span class="contact__subtitle">fabienchareun@gmail.com</span>
+            </div>
+          </div>
+          <div class="contact__information">
+            <i class="uil uil-map-marker contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Location</h3>
+              <span class="contact__subtitle">Saint Laurent de mure 69 - (30km from Lyon)</span>
+            </div>
+          </div>
+        </div>
+        <!-- FORMSUBMIT -->
+        <!-- <form action="https://formsubmit.co/a703cbf968b7ecdd98f74c079596f5a9" method="POST" class="contact__form grid"> -->
+        <form id="contact-form" class="contact__form grid">
+          <div class="contact__inputs grid">
+            <div class="contact__content">
+              <label for=""  class="contact__label">Name*</label>
+              <input type="text" name="name" id="form-name" class="contact__input" required>
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">Email*</label>
+              <input type="email" id="form-email" name="email" class="contact__input" required>
+            </div>
+          </div>
+          <div class="contact__content">
+            <label for="" class="contact__label">Subject*</label>
+            <input type="text" id="form-subject" name="_subject" class="contact__input">
+          </div>
+          <div class="contact__content">
+            <label for="" class="contact__label">Message*</label>
+            <textarea name="message" id="form-message" id="contact__textarea" cols="0" rows="7" class="contact__input" required></textarea>
+          </div>
+          <div class="contact__form-succes">
+            <h3 class="succes__message">Your message was sent successfully!</h3>
+          </div>
+          <div>
+            <button type="button" class="button button--flex button--formsubmit" id="contact-submit">
+              Send Message
+              <i class="uil uil-message button__icon"></i>
+            </button>
+          </div>
+          <div class="contact__modal">
+            <div class="contact__modal-content">
+              <h4 class="contact__modal-title">Are you sure ?</h4>
+              <span href="" class="button button--flex button--white button--span" id="cancel-modal">Cancel</span>
+              <span href="#" class="button button--flex button--span" id="submit-form-modal">Yes, Send message</span>
+            </div>
+          </div>
+          <div class="error__modal">
+            <div class="contact__modal-content error__modal-content">
+              <h4 class="contact__modal-title">Please fill in all fields</h4>
+              <span href="" class="button button--flex button--white button--span close__modal error__modal-btn">Close</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
+    <div class="footer__bg">
+      <div class="footer__container grid">
+        <div>
+          <h1 class="footer__title">Fabien</h1>
+          <span class="footer__subtitle">Front-end developer</span>
+        </div>
+        <ul class="footer__links">
+          <li>
+            <a href="#services" class="footer__link">Services</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="footer__link">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact" class="footer__link">Contact</a>
+          </li>
+        </ul>
+        <div class="footer__socials">
+          <a href="https://www.instagram.com/fab_citron" target="_blank" class="footer__social">
+            <i class="uil uil-instagram-alt"></i>
+          </a>
+          <a href="https://twitter.com/ChareunFabien" target="_blank" class="footer__social">
+            <i class="uil uil-twitter"></i>
+          </a>
+          <a href="https://github.com/FabKaiz" target="_blank" class="footer__social">
+            <i class="uil uil-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/fabien-chareun/" target="_blank" class="footer__social">
+            <i class="uil uil-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <p class="footer__copyright">&#169; Fabien Chareun</p>
+    </div>
+  </footer>
+
+  <!--==================== SCROLL TOP ====================-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+  </a>
+
+  <!--==================== AOS Animate On Scroll ====================-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!--==================== SWIPER JS ====================-->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+
+  <!--==================== MAIN JS ====================-->
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>
