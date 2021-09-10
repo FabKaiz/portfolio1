@@ -16,6 +16,16 @@
   color: var(--first-color );
 }
 
+.nav__logo img {
+  width: 25px;
+  margin-right: .5rem;
+}
+
+.nav__logo-container {
+  display: flex;
+  align-items: center;
+}
+
 .nav__toggle {
   font-size: 1.1rem;
   cursor: pointer;

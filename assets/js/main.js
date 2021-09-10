@@ -29,7 +29,6 @@ AOS.init({
 
 /*==================== Change language ====================*/
 const languageBtn = document.getElementById("switch-lang");
-console.log(languageBtn.innerText === "FR");
 
 languageBtn.addEventListener('click', () => {
   if(languageBtn.innerText === "FR") {
