@@ -7,7 +7,16 @@
   <meta property="og:title" content="Fabien Chareun Portfolio"/>
   <meta property="og:description" content="Fabien Chareun - Développeur web front-end"/>
   <meta property="og:image" content="https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"/>
-
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ECS58XLYFC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-ECS58XLYFC');
+    </script>
 
   <!--==================== UNICONS ====================-->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -652,13 +661,29 @@
             <div class="portfolio__data">
               <h3 class="portfolio__title">Vanilla JavaScript components</h3>
               <p class="portfolio__description">Simple page to reproduce some popular JavaScript components like a <strong>calculator</strong>, <strong>timer</strong>, <strong>password generator</strong>, circle following the mouse and many more using only simple JavaScript.This page and a more complex one will be available soon.</p>
-              <a href="#portfolio"
+              <a href="https://fabkaiz.github.io/Javascript-component/" target="_blank"
                 class="button button--flex button--small portfolio__button">
-                Coming soon
-                <i class="uil uil-smile button__icon button__soon"></i>
+                Try it here
+                <i class="uil uil-arrow-right button__icon"></i>
               </a>
             </div>
           </div>
+
+          <!--==================== PORTFOLIO 4 ====================-->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/img/port4.png" alt="screenshot of a personal project" class="portfolio__img">
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Snake Game 🐍 </h3>
+              <p class="portfolio__description">The famous <strong>Snake game</strong> that I reproduced during one of my <strong>JavaScript course</strong>, using <strong>vanilla JavaScript</strong> only. Click on the link to try it :)</p>
+              <a href="https://fabkaiz.github.io/snake-game-javascript/" target="_blank"
+                class="button button--flex button--small portfolio__button">
+                Jouer au Snake
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+
         </div>
         <!-- === SWIPER ARROW === -->
         <div class="swiper-button-next">
