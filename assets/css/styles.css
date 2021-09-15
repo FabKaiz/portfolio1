@@ -287,6 +287,42 @@ img {
   .error__modal-btn {
     width: auto;
   }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+  .swiper-pagination-bullet {
+    transform: scale(1.8);
+    /* margin: 0 14px; */
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 14px;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets {
+    bottom: -3rem;
+  }
+
+  .portfolio__cards__bg {
+    background-color: var(--container-color);
+    border-radius: .25rem;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 15%);
+    border: 1px solid rgba(0, 0, 0, 0.076);
+  }
+
+  .swiper-slide {
+    margin: 0 8px;
+  }
+
+  .qualification__tabs {
+    margin-right: 0;
+  }
 }
 
 /* For medium devices */
