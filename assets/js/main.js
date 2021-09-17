@@ -24,7 +24,7 @@ AOS.init({
   disable: function() {
     const maxWidth = 850;
     return window.innerWidth < maxWidth;
-  }
+  },
 });
 
 /*==================== Change language ====================*/
@@ -32,8 +32,8 @@ const languageBtn = document.getElementById("switch-lang");
 
 languageBtn.addEventListener('click', () => {
   if(languageBtn.innerText === "EN") {
-    window.location = 'en.html'
+    window.location = 'en.html';
   } else {
-    window.location = 'index.html'
+    window.location = 'index.html';
   }
-})
+});
