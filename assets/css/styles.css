@@ -361,6 +361,21 @@ img {
   }
 }
 
+@media screen and (min-width: 560px) and (max-width: 760px) {
+  .about__img {
+    height: -webkit-fill-available;
+    object-fit: cover;
+    object-position: -325px;
+  }
+
+  .about__data {
+    min-height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
 @media screen and (min-width:768px) {
   .container {
     margin-left: auto;
@@ -510,11 +525,6 @@ img {
     padding: 3rem 2.5rem 0;
     grid-template-columns: 1fr max-content;
     column-gap: 3rem;
-  }
-
-  .project__img {
-    height: 250px;
-    object-fit: cover;
   }
 
   .project__data {
