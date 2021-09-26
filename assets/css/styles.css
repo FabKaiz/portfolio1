@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 /*==================== IMPORT COMPONENTS CSS ====================*/
+
+@import "./components/layout.css";
 @import "./components/nav.css";
 @import "./components/button.css";
 @import "./components/home.css";
@@ -15,6 +17,7 @@
 @import "./components/contact.css";
 @import "./components/footer.css";
 @import "./components/scroll.css";
+
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -84,6 +87,30 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  :root {
+    --big-font-size: 5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  :root {
+    --big-font-size: 5.5rem;
+    --h1-font-size: 3rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.35rem;
+    --normal-font-size: 1.05rem;
+    --small-font-size: 0.95rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   /* HSL color mode */
@@ -95,24 +122,6 @@ body.dark-theme {
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
-}
-
-/*========== Button Dark/Light ==========*/
-.nav__btns {
-  display: flex;
-  align-items: center;
-}
-
-.change-theme {
-  font-size: 1.25rem;
-  color: var(--title-color);
-  margin-right: var(--mb-1);
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.change-theme:hover {
-  color: var(--first-color);
 }
 
 /*==================== BASE ====================*/
@@ -132,6 +141,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+  overscroll-behavior-y: none;
 }
 
 h1,
@@ -153,62 +163,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-/*==================== REUSABLE CSS CLASSES ====================*/
-.section {
-  padding: 2rem 0 4rem;
-}
-
-.section__title {
-  font-size: var(--h1-font-size);
-}
-
-.section__subtitle {
-  display: block;
-  font-size: var(--small-font-size);
-  margin-bottom: var(--mb-3);
-}
-
-.section__title,
-.section__subtitle {
-  text-align: center;
-}
-
-/*==================== LAYOUT ====================*/
-.container {
-  max-width: 768px;
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
-}
-
-.grid {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.header {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: var(--z-fixed);
-  background-color: var(--body-color);
-}
-
-#ruby-logo {
-  height: 24px;
-  width: 24px;
-}
-
-/* Active link */
-.active-link {
-  color: var(--first-color);
-}
-
-/* Change background header */
-.scroll-header {
-  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
 /*==================== MEDIA QUERIES ====================*/
@@ -295,7 +249,6 @@ img {
 
   .swiper-pagination-bullet {
     transform: scale(1.8);
-    /* margin: 0 14px; */
   }
 
   .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
@@ -456,7 +409,7 @@ img {
   }
 
   .home__scroll-button {
-    margin-left: 2rem;
+    margin-top: 6rem;
   }
 
   .about__container {
@@ -603,7 +556,6 @@ img {
 
   .home__content {
     grid-template-columns: 1px 460px 1fr;
-    /* 2px 500px 3fr */
   }
 
   .about__container {
@@ -663,5 +615,83 @@ img {
   }
   .services__modal-services {
     padding: 1rem 2rem 2rem;
+  }
+}
+
+/* For bigger devices like 1080p or 1440p */
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 0;
+    padding-top: 72px;
+  }
+
+  .home__content {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    padding: 0;
+  }
+
+  .home__data {
+    width: 75%;
+  }
+
+  .home__img {
+    height: 400px;
+  }
+
+  .home__container {
+    display: flex;
+  }
+
+  .home__container {
+    max-width: 1100px;
+  }
+
+  .about__container,
+  .skills__container,
+  .services__container,
+  .portfolio__container,
+  .project__container,
+  .contact__container {
+    max-width: 70%;
+  }
+
+  .home__social {
+    transform: translateX(-1rem);
+  }
+
+  .home__content {
+    grid-template-columns: 1px 60% 40%;
+  }
+
+  .services__container {
+    grid-template-columns: repeat(2, 420px );
+    justify-content: space-around;
+  }
+
+  .contact__form {
+    width: 100%;
+  }
+
+  .project__data .button {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .home__container {
+    max-width: 1200px;
+  }
+
+  .home__social {
+    transform: translateX(-3rem);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .project__description {
+    max-width: 70%
   }
 }
