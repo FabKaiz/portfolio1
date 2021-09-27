@@ -37,6 +37,7 @@
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+  transition: all .3s;
 }
 
 #ruby-logo {
@@ -46,10 +47,10 @@
 
 /* Active link */
 .active-link {
-  color: var(--first-color);
+  color: var(--first-color) !important;
 }
 
 /* Change background header */
 .scroll-header {
-  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 -1px 9px rgba(0, 0, 0, 0.25);
 }
