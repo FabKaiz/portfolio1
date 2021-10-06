@@ -6,6 +6,9 @@ import "./plugins/modal_services.js";
 import "./plugins/portfolio.js";
 import "./plugins/contact.js";
 
+/*==================== NAME HOVER SHADOW ====================*/
+import "./plugins/name_hover_shadow.js";
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 import "./plugins/scroll_section_links.js"
 
