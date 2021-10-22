@@ -64,6 +64,10 @@
   margin-top: 6px;
 }
 
+#firebase-logo {
+  margin-top: 6px;
+}
+
 .skills__close .skills__list {
   max-height: 0;
   overflow: hidden;
