@@ -22,13 +22,17 @@ import "./plugins/show_scroll_btn.js"
 import "./plugins/dark_light_theme.js";
 
 /*==================== AOS Animate On Scroll ====================*/
-// AOS.init({disable: 'mobile'});
-AOS.init({
-  disable: function() {
-    const maxWidth = 850;
-    return window.innerWidth < maxWidth;
-  },
-});
+document.addEventListener('DOMContentLoaded', () => {
+
+  // AOS.init({disable: 'mobile'});
+  AOS.init({
+    disable: function() {
+      const maxWidth = 850;
+      return window.innerWidth < maxWidth;
+    },
+  });
+
+}, false);
 
 /*==================== Change language ====================*/
 const languageBtn = document.getElementById("switch-lang");
