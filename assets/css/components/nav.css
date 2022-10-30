@@ -13,12 +13,12 @@
 }
 
 .nav__logo:hover {
-  color: var(--first-color );
+  color: var(--first-color);
 }
 
 .nav__logo img {
   width: 25px;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .nav__logo-container {
@@ -32,7 +32,7 @@
 }
 
 .nav__toggle:hover {
-  color: var(--first-color)
+  color: var(--first-color);
 }
 
 .nav__list {
@@ -47,7 +47,7 @@
   font-size: var(--small-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
-  transition: .3s
+  transition: 0.3s;
 }
 
 .nav__link:hover {
@@ -65,29 +65,14 @@
 .nav__close {
   position: absolute;
   right: 1.3rem;
-  bottom: .5rem;
+  bottom: 0.5rem;
   font-size: 1.5rem;
   cursor: pointer;
-  color:var(--first-color);
+  color: var(--first-color);
 }
 
 .nav__close:hover {
   color: var(--first-color-alt);
-}
-
-
-@media screen and (max-width: 767px) {
-  .nav__menu {
-    position: fixed;
-    bottom: -100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--body-color);
-    padding: 2rem 1.5rem 4rem;
-    box-shadow: 0 -1px 4px rgba(0,0,0,.15);
-    border-radius: 1.5rem 1.5rem 0 0;
-    transition: .3s
-  }
 }
 
 .switch__lang {
@@ -101,4 +86,65 @@
 /* show menu */
 .show-menu {
   bottom: 0;
+}
+
+.new_website-container {
+  position: absolute;
+  top: 200%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 90%;
+}
+
+.new_website-container a {
+  color: var(--body-color);
+  font-size: 1.5rem;
+  font-weight: var(--font-medium);
+  background-color: var(--first-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 2rem;
+  width: 90%;
+  height: 100%;
+  padding: 4rem;
+  animation: vertical-shaking 2s 4 2s;
+}
+
+@keyframes vertical-shaking {
+  0% { transform: translateY(0) }
+  25% { transform: translateY(5px) }
+  50% { transform: translateY(-5px) }
+  75% { transform: translateY(5px) }
+  100% { transform: translateY(0) }
+ }
+
+ @media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.3s;
+  }
+
+  .new_website-container {
+    top: -150%;  
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  .new_website-container a {
+    width: 95%;
+    font-size: 1.2rem;
+  }
 }
